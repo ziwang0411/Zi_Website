@@ -29,7 +29,7 @@ const Projects = () => {
     <React.Fragment>
       <Box component="div" className={classes.mainContainer}>
         <Navbar />
-        <Grid container justify="flex-start" alignItems="center">
+        <Grid container justify="center" alignItems="center">
           <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea>

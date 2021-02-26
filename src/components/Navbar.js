@@ -25,6 +25,7 @@ import {
   ContactMail,
 } from "@material-ui/icons";
 import avatar from "../avatar.png";
+import Footer from "../components/Footer";
 
 //CSS Styles
 const useStyles = makeStyles((theme) => ({
@@ -123,6 +124,7 @@ const Navbar = () => {
               anchor="left"
             >
               {sideList("left")}
+              <Footer />
             </MobilLeftMenuSlider>
           </Toolbar>
         </AppBar>
