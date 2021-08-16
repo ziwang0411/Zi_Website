@@ -32,7 +32,7 @@ const ParticleAnim = () => {
               value: "random",
             },
             enable: true,
-            opacity: 0.4,
+            opacity: 1.5,
             width: 2,
           },
           shape: {
