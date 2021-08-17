@@ -13,7 +13,7 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import project1 from "../images/html-css-javascript-lg.jpg";
+import project1 from "../images/Project1Thumbnail.png";
 import project2 from "../images/javascript-fullstack.jpg";
 import project3 from "../images/React.jpg";
 import project4 from "../images/react-redux.jpg";
@@ -26,10 +26,10 @@ const useStyles = makeStyles({
 });
 const projectItems = [
   {
-    title: "eCommerce & management system",
+    title: "eCommerce & Shop Management ",
     button1: "Share",
     button2: "More Info",
-    path: "/",
+    path: "/Project1",
     image: project1,
     description: (
       <Typography
@@ -130,7 +130,7 @@ const Projects = () => {
           {projectItems.map((project, key) => (
             <Grid key={key} item xs={12} sm={8} md={6}>
               <Card className={classes.cardContainer}>
-                <CardActionArea>
+                <CardActionArea component={Link} to={project.path}>
                   <CardMedia
                     component="img"
                     alt="Project 1"
@@ -138,7 +138,7 @@ const Projects = () => {
                     image={project.image}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5">
+                    <Typography gutterBottom variant="h4">
                       {project.title}
                     </Typography>
                     <Typography
@@ -154,7 +154,12 @@ const Projects = () => {
                   <Button size="small" color="primary">
                     {project.button1}
                   </Button>
-                  <Button size="small" color="primary" component={Link} to="/">
+                  <Button
+                    size="small"
+                    color="primary"
+                    component={Link}
+                    to={project.path}
+                  >
                     {project.button2}
                   </Button>
                 </CardActions>
