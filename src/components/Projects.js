@@ -14,7 +14,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import project1 from "../images/Project1Thumbnail.png";
-import project2 from "../images/javascript-fullstack.jpg";
+import project2 from "../images/Project2Thumbnail.png";
 import project3 from "../images/React.jpg";
 import project4 from "../images/react-redux.jpg";
 const useStyles = makeStyles({
@@ -55,7 +55,7 @@ const projectItems = [
     title: "Restaurant health condition rating & review",
     button1: "Share",
     button2: "More Info",
-    path: "/",
+    path: "/Project2",
     image: project2,
     description: (
       <Typography
@@ -151,9 +151,6 @@ const Projects = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    {project.button1}
-                  </Button>
                   <Button
                     size="small"
                     color="primary"

@@ -24,7 +24,7 @@ import {
   Apps,
   ContactMail,
 } from "@material-ui/icons";
-import avatar from "../profile-formal.jpg";
+import avatar from "../avatar.png";
 import Footer from "../components/Footer";
 
 //CSS Styles
