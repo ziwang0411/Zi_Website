@@ -14,10 +14,12 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "tomato",
+    textShadow: "1px 1px 1px grey, 2px 2px 1px grey",
   },
-  subtitle: {
-    color: "tan",
+  subTitle: {
+    color: "white",
     marginBottom: "3rem",
+    textShadow: "1px 1px 1px grey, 2px 2px 1px grey",
   },
   typedContainer: {
     position: "absolute",
@@ -37,12 +39,20 @@ const Header = () => {
         <Avatar className={classes.avatar} src={avatar} alt="avatar" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["Welcome"]} typeSpeed={40} />
+        <Typed strings={["Hi! I am Zi Wang"]} typeSpeed={40} />
       </Typography>
       <br />
       <Typography variant="h4" className={classes.subTitle}>
         <Typed
-          strings={["Web Design", "Web Development", "Web Application"]}
+          strings={[
+            "Welcome to my website",
+            "Let's get it started",
+            "Please click the top left arrow",
+            "View my personal portfolio",
+            "View my resume",
+            "Feel free to contact me",
+            "And have a great day!",
+          ]}
           typeSpeed={40}
           backSpeed={60}
           loop
