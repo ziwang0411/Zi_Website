@@ -24,7 +24,7 @@ import {
   Apps,
   ContactMail,
 } from "@material-ui/icons";
-import avatar from "../avatar.png";
+import avatar from "../profile-formal.jpg";
 import Footer from "../components/Footer";
 
 //CSS Styles
@@ -117,6 +117,12 @@ const Navbar = () => {
             </IconButton>
             <Typography variant="h5" style={{ color: "tan" }}>
               Portfolio
+            </Typography>{" "}
+            <Typography
+              variant="h5"
+              style={{ color: "tan", margin: "auto 1rem 1rem auto" }}
+            >
+              Zi Wang
             </Typography>
             <MobilLeftMenuSlider
               open={state.left}

@@ -1,15 +1,15 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Avatar, Grid, Box } from "@material-ui/core";
-import avatar from "../avatar.png";
+import avatar from "../profile.jpg";
 import Typed from "react-typed";
 
 //CSS STYLES
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(50),
+    height: theme.spacing(50),
     margin: theme.spacing(1),
   },
   title: {
