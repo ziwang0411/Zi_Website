@@ -1,28 +1,64 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
-import { Typography, Box } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import Navbar from "./Navbar";
-import ParticleAnim from "./ParticleAnim";
+import ZiResume from "./ZiResume.pdf";
+import Container from "@material-ui/core/Container";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles({
-  mainContainer: {
-    background: "#233",
+  root: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  container: {
+    position: "relative",
+    overflow: "hidden",
+    width: "80%",
+    height: "80%",
+    paddingTop: "56.25%",
+  },
+  iframe: {
+    position: "absolute",
+    top: 0,
+    left: "10%",
+    bottom: 0,
+    right: 0,
+    width: "80%",
+    height: "80%",
+  },
+  button: {
+    marginTop: "1%",
+    marginBottom: "1%",
   },
 });
 
-const Resume = () => {
+export default function Resume() {
   const classes = useStyles();
+
   return (
     <React.Fragment>
       <Navbar />
-      {ParticleAnim()}
-      <Box component="header" className={classes.mainContainer}>
-        <Typography variant="h4" align="center">
-          working experience
-        </Typography>
+      <Box component="header">
+        <div className={classes.root}>
+          <Button
+            href={ZiResume}
+            variant="contained"
+            color="inherit"
+            className={classes.button}
+          >
+            View Full Screen
+          </Button>
+          <Container className={classes.container}>
+            <iframe
+              src={ZiResume}
+              title="resume"
+              className={classes.iframe}
+            ></iframe>
+          </Container>
+        </div>
       </Box>
     </React.Fragment>
   );
-};
-
-export default Resume;
+}

@@ -14,7 +14,6 @@ import {
   List,
   Typography,
   Box,
-  Slider,
 } from "@material-ui/core";
 
 import {
@@ -24,7 +23,7 @@ import {
   Apps,
   ContactMail,
 } from "@material-ui/icons";
-import avatar from "../avatar.png";
+import avatar from "../profile.jpg";
 import Footer from "../components/Footer";
 
 //CSS Styles

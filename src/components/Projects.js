@@ -15,7 +15,7 @@ import {
 } from "@material-ui/core";
 import project1 from "../images/Project1Thumbnail.png";
 import project2 from "../images/Project2Thumbnail.png";
-import project3 from "../images/React.jpg";
+import project3 from "../images/Project3Thumbnail.png";
 import project4 from "../images/react-redux.jpg";
 const useStyles = makeStyles({
   mainContainer: {},
@@ -76,32 +76,11 @@ const projectItems = [
     ),
   },
   {
-    title: "WSB MemeStock Sentiment Analyzer",
-    button1: "Share",
-    button2: "More Info",
-    path: "/",
-    image: project3,
-    description: (
-      <Typography variant="body2" color="textSecondary" component="p">
-        <li>
-          Crawling posts in Reddit subreddits(/WSB, /stocks) and conduct
-          sentiment analysis on the most mentioned stocks to predict the
-          sentiment (Buy? Sell? HODL? <b>YOLO</b>?)
-        </li>
-        <li>
-          Combined sentiment analysis results with stock prices and
-          fundamentals, stored for market predictability, and analyzed the
-          indirect effect of public opinion on the direction of the stock price.
-        </li>
-      </Typography>
-    ),
-  },
-  {
     title: "Survey sending and collecting system",
     button1: "Share",
     button2: "More Info",
-    path: "/",
-    image: project4,
+    path: "/project3",
+    image: project3,
     description: (
       <Typography variant="body2" color="textSecondary" component="p">
         <li>
@@ -115,6 +94,27 @@ const projectItems = [
         <li>
           Enabled <b>OAuth</b> for user authentication and handled data
           persistence of user credits and info in MongoDB.
+        </li>
+      </Typography>
+    ),
+  },
+  {
+    title: "WSB MemeStock Sentiment Analyzer",
+    button1: "Share",
+    button2: "More Info",
+    path: "/projects",
+    image: project4,
+    description: (
+      <Typography variant="body2" color="textSecondary" component="p">
+        <li>
+          Crawling posts in Reddit subreddits(/WSB, /stocks) and conduct
+          sentiment analysis on the most mentioned stocks to predict the
+          sentiment (Buy? Sell? HODL? <b>YOLO</b>?)
+        </li>
+        <li>
+          Combined sentiment analysis results with stock prices and
+          fundamentals, stored for market predictability, and analyzed the
+          indirect effect of public opinion on the direction of the stock price.
         </li>
       </Typography>
     ),
@@ -138,7 +138,7 @@ const Projects = () => {
                     image={project.image}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h4">
+                    <Typography gutterBottom variant="h5">
                       {project.title}
                     </Typography>
                     <Typography

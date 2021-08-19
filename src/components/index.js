@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import PersistentNavBar from "./PersistentNavbar";
 import Header from "./Header";
 import { makeStyles } from "@material-ui/styles";
 import ParticleAnim from "./ParticleAnim";

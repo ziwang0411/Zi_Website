@@ -15,14 +15,13 @@ import Carousel from "react-material-ui-carousel";
 import { makeStyles } from "@material-ui/styles";
 import ArrowBack from "@material-ui/icons/ArrowBack";
 
-import Home from "../../images/Project1/Home.png";
-import Search from "../../images/Project1/Search.png";
-import Checkout from "../../images/Project1/Checkout.png";
-import OrderTracking from "../../images/Project1/OrderTracking.png";
+import Home from "../../images/Project3/Home.png";
+import Payment from "../../images/Project3/Payment.png";
+import Review from "../../images/Project3/Review.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "center",
-    width: "80%",
+    width: "75%",
     margin: "auto",
   },
   media: {
@@ -65,24 +64,21 @@ function RecipeReviewCard(props) {
 function ProjectCarousel(props) {
   var items = [
     {
-      title: "eCommerce & Management System",
-      description: "Angular.js Front-end + Spring Boot Back-end",
+      title: "Emaily - feedback collection app",
+      description: "Built with React, Redux and Node.js",
       image: Home,
     },
     {
-      title: "Shop home and search page",
-      description: "View and Search for Different Products",
-      image: Search,
+      title: "Pay, create and review survey",
+      description:
+        "You can add credits using Stripe, Create & send Surveys to a big list of emails.",
+      image: Payment,
     },
     {
-      title: "Checkout items",
-      description: "Purchase item(s) as a member/guest",
-      image: Checkout,
-    },
-    {
-      title: "Check Order Status",
-      description: "Check order history and track shipping status",
-      image: OrderTracking,
+      title: "View created surveys and feedback",
+      description:
+        "Users can vote in their emails, Track client's votes on your dashboard",
+      image: Review,
     },
   ];
 
@@ -100,16 +96,6 @@ function ProjectCarousel(props) {
   );
 }
 
-// function Item(props) {
-//   return (
-//     <Paper>
-//       <h2>{props.item.name}</h2>
-//       <p>{props.item.description}</p>
-
-//       <Button className="CheckButton">Check it out!</Button>
-//     </Paper>
-//   );
-// }
 const project1 = () => {
   return (
     <React.Fragment>
