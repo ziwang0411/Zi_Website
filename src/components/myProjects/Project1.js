@@ -66,7 +66,11 @@ function ProjectCarousel(props) {
   var items = [
     {
       title: "eCommerce & Management System",
-      description: "Angular.js Front-end + Spring Boot Back-end",
+      description: (
+        <Typography>
+          Built with<b>Angular.js</b> Front-end and <b>Spring Boot</b> Back-end
+        </Typography>
+      ),
       image: Home,
     },
     {

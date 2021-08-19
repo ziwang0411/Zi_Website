@@ -6,7 +6,7 @@ const useStyles = makeStyles({
   particlesCanva: {
     position: "absolute",
     color: "red",
-    opacity: 0.5,
+    opacity: 0.9,
   },
 });
 const ParticleAnim = () => {
@@ -18,21 +18,22 @@ const ParticleAnim = () => {
       params={{
         particles: {
           number: {
-            value: 45,
+            value: 40,
             density: {
-              enable: true,
-              value_area: 900,
+              enable: false,
+              area: 30,
+              factor: 10,
             },
           },
           color: {
-            value: "random",
+            value: "#2a5287",
           },
           links: {
             color: {
               value: "random",
             },
             enable: true,
-            opacity: 1.5,
+            opacity: 1.0,
             width: 2,
           },
           shape: {
@@ -43,11 +44,11 @@ const ParticleAnim = () => {
             },
           },
           size: {
-            value: 3,
+            value: 6,
             random: true,
             anim: {
               enable: true,
-              speed: 10,
+              speed: 6,
               size_min: 0.1,
               sync: true,
             },

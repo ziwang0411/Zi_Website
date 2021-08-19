@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0.5rem auto",
     width: theme.spacing(13),
     height: theme.spacing(13),
+    border: "solid #ffc954",
   },
   listItem: {
     color: "tan",
@@ -114,8 +115,12 @@ const Navbar = () => {
             <IconButton onClick={toggleSlider("left", true)}>
               <ArrowBack style={{ color: "gold" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "tan" }}>
-              Portfolio
+            <Typography
+              onClick={toggleSlider("left", true)}
+              variant="h5"
+              style={{ color: "tan" }}
+            >
+              Menu
             </Typography>{" "}
             <Typography
               variant="h5"

@@ -64,20 +64,24 @@ function RecipeReviewCard(props) {
 function ProjectCarousel(props) {
   var items = [
     {
-      title: "Emaily - feedback collection app",
-      description: "Built with React, Redux and Node.js",
+      title: "Emaily - a feedback collection app",
+      description: (
+        <Typography>
+          Built with <b>React</b>, <b>Redux</b> and <b>Node.js</b>
+        </Typography>
+      ),
       image: Home,
     },
     {
-      title: "Pay, create and review survey",
+      title: "Pay, create and send surveys",
       description:
-        "You can add credits using Stripe, Create & send Surveys to a big list of emails.",
+        "You can add credits (using Stripe), Create & send Surveys to a big list of emails.",
       image: Payment,
     },
     {
-      title: "View created surveys and feedback",
+      title: "View created surveys and collect feedback",
       description:
-        "Users can vote in their emails, Track client's votes on your dashboard",
+        "Once users voted in their emails, you can track client's votes on your dashboard",
       image: Review,
     },
   ];

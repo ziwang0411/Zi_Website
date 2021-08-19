@@ -65,7 +65,11 @@ function ProjectCarousel(props) {
   var items = [
     {
       title: "Health dining restaruant reviewing system",
-      description: "HTML, CSS, Javascript with Node.js Back-end",
+      description: (
+        <Typography>
+          <b>HTML, CSS, Javascript</b> with <b>Node.js</b> Back-end
+        </Typography>
+      ),
       image: Home,
     },
     {
